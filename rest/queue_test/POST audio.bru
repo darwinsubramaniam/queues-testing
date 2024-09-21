@@ -1,0 +1,17 @@
+meta {
+  name: POST audio
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost:3000/audio/transcode
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "sleepTime":20000
+  }
+}
